@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mi Región - Cauca Cultural</title>
+    <!-- Aquí conecto la hoja de estilos externa para darle diseño a la página -->
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    <!-- Encabezado principal de la página con el logo corporativo y título -->
+    <header>
+        <img src="img/escudo.png" alt="Logo oficial del Departamento del Cauca" class="logo">
+        <h1>Departamento del Cauca</h1>
+        <p>Diversidad, cultura y tradición entre la cordillera y el mar</p>
+    </header>
+
+    <!-- Barra de navegación con el menú y el enlace externo a la gobernación -->
+    <nav>
+        <ul class="menu">
+            <li><a href="#inicio">Inicio</a></li>
+            <li><a href="#gastronomia">Gastronomía</a></li>
+            <li><a href="#turismo">Turismo</a></li>
+            <!-- Este enlace abre la web oficial del Cauca en una pestaña nueva -->
+            <li><a href="https://cauca.gov.co" target="_blank">Gobernación</a></li>
+        </ul>
+    </nav>
+
+    <!-- Contenedor general que agrupa todo el bloque de información principal -->
+    <main>
+
+        <!-- Bloque de inicio con la bienvenida y descripción general del Cauca -->
+        <section id="inicio">
+            <h2>Bienvenidos al Cauca</h2>
+            <p>El departamento del Cauca es una tierra mágica ubicada al suroeste de Colombia. Es reconocido internacionalmente por su riqueza pluriétnica, su historia colonial reflejada en la Ciudad Blanca de Popayán y la majestuosidad de sus paisajes naturales que van desde volcanes nevados hasta las costas del Pacífico.</p>
+            <p class="destacado">Dato clave: Popayán fue declarada por la UNESCO como la primera Ciudad de la Gastronomía en el año 2005 gracias a su preservación de saberes tradicionales.</p>
+        </section>
+
+        <!-- Sección de gastronomía con los tres platos organizados en hilera -->
+        <section id="gastronomia">
+            <h2>Gastronomía Típica</h2>
+            <p>Los sabores culinarios del Cauca son el resultado de un mestizaje cultural único entre tradiciones indígenas, africanas y españolas.</p>
+            
+            <!-- Caja contenedora para alinear las tres tarjetas horizontalmente -->
+            <div class="contenedor-tarjetas">
+                
+                <!-- Tarjeta 1: La Carantanta -->
+                <div class="tarjeta">
+                    <img src="img/carantanta.jpg" alt="Plato tradicional de Carantanta caucana">
+                    <h3>La Carantanta</h3>
+                    <p>Un pasabocas crujiente de maíz que se extrae del pegado que queda en la paila al cocinar la masa.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+
+                <!-- Tarjeta 2: Empanadas de Pipián -->
+                <div class="tarjeta">
+                    <img src="img/empanada.jpg" alt="Empanadas de pipián de Popayán">
+                    <h3>Empanadas de Pipián</h3>
+                    <p>Deliciosas empanadas rellenas de un guiso especial de papa criolla, carne, huevo y la famosa salsa de pipián.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+
+                <!-- Tarjeta 3: El Salpicón Payanés -->
+                <div class="tarjeta">
+                    <img src="img/salpicon.jpg" alt="Salpicón Payanés de Popayán">
+                    <h3>El Salpicón Payanés</h3>
+                    <p>Una refrescante bebida tradicional de Popayán elaborada con una mezcla perfecta de frutas locales como mora, lulo y guanábana.</p>
+                    <button class="btn">Ver más</button>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Sección de turismo con texto continuo y espacio para una sola foto grande -->
+        <section id="turismo">
+            <h2>Turismo Extraordinario</h2>
+            <p>El departamento ofrece destinos arqueológicos, naturales y coloniales sin igual. Entre los lugares más destacados para visitar se encuentran el imponente <strong>Parque Nacional Natural Puracé</strong>, hogar del cóndor andino y hermosas termales azufradas; el místico <strong>Parque Arqueológico de Tierradentro</strong> con sus tumbas prehispánicas subterráneas únicas en el mundo; y el municipio de <strong>Silvia</strong>, epicentro de la cultura Misak donde los paisajes verdes andinos enmarcan las tradiciones ancestrales de la región.</p>
+            <p>También ofrece diferentes épocas del año como puede ser una de ellas la Semana Santa.</p>
+            
+            <!-- Caja reservada exclusivamente para centrar la foto destacada de paisajes -->
+            <div class="imagen-turismo-unica">
+                <img src="img/turismo.jpg" alt="Paisajes turísticos del Departamento del Cauca">
+            </div>
+        </section>
+
+        <!-- Barra de contenido lateral para datos curiosos complementarios -->
+        <aside>
+            <h3>¿Sabías qué?</h3>
+            <ul>
+                <li>El Cauca es el lugar de nacimiento de la hermosa planta de la que se extrae la seda en las comunidades locales.</li>
+                <li>La Semana Santa de Popayán fue inscrita por la UNESCO en la lista representativa del Patrimonio Cultural Inmaterial.</li>
+                <li>El imponente Volcán Puracé custodia activamente el cielo de la cordillera central.</li>
+            </ul>
+        </aside>
+
+    </main>
+
+    <!-- Pie de página con mis datos, año, copyright y procedencia de la información -->
+    <footer>
+        <div class="datos-aprendiz">
+            <p><strong>&copy; 2026</strong> - Todos los derechos reservados.</p>
+            <p>Diseñado por: <strong>Jesus Sebastian Cuellar Lopez</strong> | Ficha: <strong>3492641</strong></p>
+        </div>
+        
+        <!-- Bloque de texto para detallar las fuentes y derechos de autor -->
+        <div class="creditos-fuentes">
+            <p><strong>Créditos y Procedencia de Información:</strong></p>
+            <p>• Los datos informáticos, históricos y turísticos fueron consultados en el portal oficial de la <em>Gobernación del Cauca</em>.</p>
+            <p>• El contenido sobre las preparaciones gastronómicas tradicionales proviene de registros culinarios libres de <em>Wikipedia</em>.</p>
+            <p>• El logo corporativo institucional fue extraído del sitio web gubernamental de la alcaldía y el resto de recursos visuales provienen del repositorio de licencias libres de <em>Wikimedia Commons / Wikipedia</em>.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

@@ -1,0 +1,254 @@
+/* Aquí hago el reinicio de los márgenes y el tamaño de las cajas */
+* {
+    box-sizing: border-box; /* Esto hace que el ancho final ya sume el padding y el borde para que no se desarme el diseño */
+}
+
+/* Estilos generales usando selectores de etiqueta directos */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    line-height: 1.6;
+    background-color: #f5f5f5; /* Un gris clarito de fondo para que la página no se vea tan blanca */
+    color: #2b2b2b; /* Un tono negro mate para que los textos sean suaves al leer */
+}
+
+header {
+    width: 100%;
+    padding: 20px;
+    margin: 0;
+    text-align: center;
+    color: white; /* Nombre del color en formato de texto normal */
+    
+    /* Pongo la imagen de la arquitectura colonial de fondo desde el CSS */
+    background-image: url("../img/arquitectura.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    
+    /* Si la imagen no carga, queda este color hexadecimal que es el rojo oscuro */
+    background-color: #8b1e22; 
+}
+
+header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 5px;
+    text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+header p {
+    font-size: 1.2rem;
+    margin: 0;
+}
+
+nav {
+    /* La barra del menú la dejo en un tono gris oscuro usando formato HSL */
+    background-color: hsl(0, 0%, 20%); 
+}
+
+nav ul {
+    list-style: none; /* Le quito los puntos y viñetas de lista al menú */
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li a {
+    display: block;
+    color: #ffffff;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 15px 20px;
+    transition: background-color 0.3s ease;
+}
+
+/* El efecto para que cambie de color cuando le pasas el mouse por encima */
+nav ul li a:hover {
+    background-color: hsl(0, 70%, 35%); /* Cambia al rojo mate de la paleta */
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+section {
+    width: 100%; /* Estiro las secciones para que ocupen todo el espacio del contenedor */
+    background-color: #ffffff;
+    padding: 25px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    border: 1px solid #e0e0e0;
+}
+
+section h2 {
+    color: #8b1e22; /* El título h2 lleva el color rojo vino principal */
+    border-bottom: 2px solid #4a4a4a; /* Una línea gris abajo del título para decorar */
+    padding-bottom: 8px;
+    margin-top: 0;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+aside {
+    width: 100%; /* Lo dejo al ancho completo para que se acomode bien abajo */
+    padding: 20px; /* Padding de 20px exactos en los cuatro lados */
+    margin: 0 0 20px 0; /* Margen en orden de reloj: arriba, derecha, abajo e izquierda */
+    background-color: #ffffff;
+    border-radius: 4px;
+    
+    /* Le pongo un borde grueso a la izquierda con el rojo vino */
+    border-left: 5px solid #8b1e22; 
+    
+    /* El fondo del cuadro de datos curiosos lleva una transparencia en RGBA */
+    background-color: rgba(139, 30, 34, 0.05); 
+}
+
+aside h3 {
+    margin-top: 0;
+    color: #8b1e22;
+}
+
+aside ul {
+    padding-left: 20px;
+}
+
+aside li {
+    margin-bottom: 10px;
+    font-size: 0.95rem;
+}
+
+footer {
+    width: 100%; /* El pie de página va al 100% del ancho */
+    padding: 20px 40px; /* Estilo abreviado: 20px arriba/abajo y 40px a los lados */
+    margin-top: 30px; /* Espacio de separación con lo que está arriba */
+    border-top: 3px solid #8b1e22; /* Borde rojo arriba de 3px */
+    text-align: center;
+    background-color: #1a1a1a; /* Color negro carbón para el fondo */
+    color: white; 
+}
+
+/* Los estilos para ordenar el texto de los créditos abajo en el footer */
+.creditos-fuentes {
+    margin-top: 15px;
+    padding-top: 15px;
+    border-top: 1px solid #333333;
+    font-size: 0.85rem;
+    color: #b3b3b3;
+    text-align: left;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.creditos-fuentes em {
+    color: #ffffff;
+    font-style: normal;
+    text-decoration: underline;
+}
+
+/* Diseño de las partes de la página usando clases personalizadas */
+.logo {
+    width: 100px;
+    height: auto;
+    margin-bottom: 10px;
+}
+
+/* Hago que los enlaces del menú se organicen uno al lado del otro */
+.menu {
+    display: flex;
+    justify-content: flex-start;
+}
+
+/* El contenedor que obliga a las 3 tarjetas de comida a quedarse metidas en una sola fila */
+.contenedor-tarjetas {
+    display: flex;
+    flex-direction: row; 
+    justify-content: space-between;
+    gap: 20px;
+    margin-top: 20px;
+    width: 100%;
+}
+
+/* El diseño de las cajitas para cada plato de comida */
+.tarjeta {
+    width: 32%; /* Reparte el espacio perfecto para que quepan las 3 en la misma hilera */
+    padding: 15px; /* El espacio de adentro de la tarjeta */
+    background-color: #ffffff;
+    border: 1px solid #dcdcdc; 
+    border-radius: 8px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08); 
+}
+
+/* Ajusto el tamaño de las fotos de los platos para que midan lo mismo y no se deformen */
+.tarjeta img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover; /* Recorta la imagen para que se adapte al cuadro de forma perfecta */
+    border-radius: 4px;
+    margin-bottom: 10px;
+}
+
+.tarjeta h3 {
+    margin: 5px 0;
+    font-size: 1.2rem;
+    color: #8b1e22;
+}
+
+.tarjeta p {
+    font-size: 0.9rem;
+    color: #555555;
+    flex-grow: 1;
+}
+
+/* El diseño base de los botones usando formato RGB para el rojo mate unificado */
+.btn {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    background-color: rgb(166, 41, 46); 
+    color: #ffffff;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.2s ease;
+    width: 100%;
+    text-align: center;
+}
+
+/* El cambio de color rojo oscuro cuando pones el cursor encima del botón */
+.btn:hover {
+    background-color: rgb(122, 28, 32);
+}
+
+/* El bloque para darle un tamaño grande y centrar la única foto de turismo */
+.imagen-turismo-unica {
+    width: 100%;
+    margin-top: 20px;
+    border-radius: 8px;
+    overflow: hidden;
+    border: 1px solid #dcdcdc;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.08);
+}
+
+.imagen-turismo-unica img {
+    width: 100%;
+    height: 400px; /* Le doy una buena altura para que destaque el paisaje */
+    object-fit: cover;
+    display: block;
+}
+
+/* Remuevo los adornos para que el texto destacado se lee de forma natural y normal como los otros parrafos */
+.destacado {
+    background-color: transparent;
+    border-left: none;
+    padding: 0;
+    font-style: normal;
+}
